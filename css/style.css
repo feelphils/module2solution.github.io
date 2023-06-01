@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    /*This is important, since content-box is the default one, the default browse style keeps 8px away from the browser window */
+}
+
+.row {
+    width: 100%;
+}
+
+/* ---------  <for small size screens like a mobile phone ---------------- */
+@media (max-width: 767px) {
+    .small {
+        float: left;
+        width: 100%;
+    }
+
+}
+
+/* For medium-sized windows*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .medium {
+        float: left;
+        width: 50%;
+    }
+
+}
+
+
+/* for large-sized screens*/
+@media (min-width: 992px) {
+    .large {
+        float: left;
+        width: 33.33%;
+    }
+
+}
+
+div>h1 {
+    text-align: center;
+    font-size: 175%;
+}
+
+h2 {
+    font-size: 125%;
+}
+
+p,
+h1,
+h2 {
+    font-family: "arial", Times, serif;
+
+}
+
+section {
+    position: relative;
+    margin: 20px;
+}
+
+section>h2 {
+    position: absolute;
+    margin-top: 0px;
+    top: 0px;
+    right: 0px;
+    width: 200px;
+    text-align: center;
+}
+
+section>p {
+    padding: 50px 10px 10px 10px;
+}
+
+section,
+section>h2 {
+    border: 1px solid black;
+}
+
+#section-1 {
+    background-color: rgb(186, 182, 182);
+}
+
+#section-2 {
+    background-color: #889698;
+}
+
+#section-3 {
+    background-color: #9faeb5;
+}
+
+#section-1>h2 {
+    background-color: #4b762e;
+}
+
+#section-2>h2 {
+    background-color: #4b319b;
+}
+
+#section-3>h2 {
+    background-color: #eb3911;
+}
